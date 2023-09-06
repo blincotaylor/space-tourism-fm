@@ -1,0 +1,89 @@
+@import "mixins";
+@import "globals";
+@import "reset";
+
+// -------------------------
+// ?    Utility Classes
+// -------------------------
+
+.flex {
+    @include flex;
+}
+
+.grid {
+    @include grid;
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.bg-dark { background-color: $clr-dark; }
+.bg-accent { background-color: $clr-accent; }
+.bg-light { background-color: $clr-light; }
+
+.text-dark { color: $clr-dark; }
+.text-accent { color: $clr-accent; }
+.text-light { color: $clr-light; }
+
+.ff-serif { font-family: $ff-serif; }
+.ff-sans-cond { font-family: $ff-sans-cond; }
+.ff-sans-normal { font-family: $ff-sans-normal; }
+
+.letter-spacing-1 { letter-spacing: 4.75px; }
+.letter-spacing-2 { letter-spacing: 2.7px; }
+.letter-spacing-3 { letter-spacing: 2.35px; }
+
+.uppercase { text-transform: uppercase; }
+
+.fs-900 { font-size: $fs-900; }
+.fs-800 { font-size: $fs-800; }
+.fs-700 { font-size: $fs-700; }
+.fs-600 { font-size: $fs-600; }
+.fs-500 { font-size: $fs-500; }
+.fs-400 { font-size: $fs-400; }
+.fs-300 { font-size: $fs-300; }
+.fs-200 { font-size: $fs-200; }
+
+.fs-900, 
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
+
+
+// -------------------------
+// ?    Main Styles
+// -------------------------
+
+body {
+    font-family: $ff-sans-normal;
+    font-size: $fs-400;
+    color: $clr-light;
+    background-color: $clr-dark;
+}
+
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}

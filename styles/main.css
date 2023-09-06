@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.bg-dark {
+  background-color: hsl(230, 35%, 7%);
+}
+
+.bg-accent {
+  background-color: hsl(231, 77%, 90%);
+}
+
+.bg-light {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.text-dark {
+  color: hsl(230, 35%, 7%);
+}
+
+.text-accent {
+  color: hsl(231, 77%, 90%);
+}
+
+.text-light {
+  color: hsl(0, 0%, 100%);
+}
+
+.ff-serif {
+  font-family: "Bellefair", serif;
+}
+
+.ff-sans-cond {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.ff-sans-normal {
+  font-family: "Barlow", sans-serif;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 2.35px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-900 {
+  font-size: 9.375rem;
+}
+
+.fs-800 {
+  font-size: 6.25rem;
+}
+
+.fs-700 {
+  font-size: 3.5rem;
+}
+
+.fs-600 {
+  font-size: 2rem;
+}
+
+.fs-500 {
+  font-size: 1.75rem;
+}
+
+.fs-400 {
+  font-size: 1.125rem;
+}
+
+.fs-300 {
+  font-size: 15rem;
+}
+
+.fs-200 {
+  font-size: 0.875rem;
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(230, 35%, 7%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */
